@@ -8,12 +8,6 @@
 
 <body>
 
-    <style id="Bg">
-        body{
-            background-color: white;
-        }
-    </style>
-
     <div id="EventDiv">
 
         <h1 id="demo"></h1>
@@ -38,7 +32,7 @@
         var lastPic = 'dice-1.png'
 
         function ChangeBg() {
-              document.getElementById('Bg').innerHTML = 'blue'
+              document.body.style.backgroundcolor = 'green'
           }
 
           function ChangeText() {
@@ -55,7 +49,7 @@
           }
 
           function RemoveImg() {
-              document.getElementById('pic').src = ''
+              document.getElementById('pic').style.visibility = ('hidden');
           }
 
           function ShowImg() {
